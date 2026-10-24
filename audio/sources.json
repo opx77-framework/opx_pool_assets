@@ -1,0 +1,35 @@
+[
+  {
+    "path": "audio/cue.wav",
+    "sha256": "8d7eec683da87b1e74c977824018e0df387509bb776d6fea1c6ec8bff4e546e9",
+    "source": "https://freesound.org/people/AmberdeMeillon/sounds/443066/",
+    "author": "AmberdeMeillon",
+    "license": "CC0-1.0",
+    "sourcePreviewSha256": "9b326ed2655986ba7fdf931c2a826ece51955c6f911c04ca6f9080df886a9fc6",
+    "trimStartSeconds": 3.74,
+    "durationSeconds": 0.10501133786848073,
+    "processing": "Trimmed public HQ MP3 preview; mono PCM16 44100 Hz; short fades; cue/pocket gain adjusted."
+  },
+  {
+    "path": "audio/ball.wav",
+    "sha256": "59a13abae876f60674d224a7e214b8c34a443b02fd3809f36b217115d963dba2",
+    "source": "https://freesound.org/people/Za-Games/sounds/539854/",
+    "author": "Za-Games",
+    "license": "CC0-1.0",
+    "sourcePreviewSha256": "8fba3f6faccc03d06ac6fa7f1a3e496b7dba18468364082526a9b8b52af0950d",
+    "trimStartSeconds": 0,
+    "durationSeconds": 0.239297052154195,
+    "processing": "Trimmed public HQ MP3 preview; mono PCM16 44100 Hz; short fades; cue/pocket gain adjusted."
+  },
+  {
+    "path": "audio/pocket.wav",
+    "sha256": "bde0512688df5b771838968be1561d707478e14e3cc76e5491680971ec210df9",
+    "source": "https://freesound.org/people/AmberdeMeillon/sounds/443067/",
+    "author": "AmberdeMeillon",
+    "license": "CC0-1.0",
+    "sourcePreviewSha256": "106139699e12f482b845d7042b58136eac2e9ded85817caad3d62eeca36b9f1f",
+    "trimStartSeconds": 5.04,
+    "durationSeconds": 0.65,
+    "processing": "Trimmed public HQ MP3 preview; mono PCM16 44100 Hz; short fades; cue/pocket gain adjusted."
+  }
+]

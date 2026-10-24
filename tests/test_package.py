@@ -30,6 +30,32 @@ class PackageTests(unittest.TestCase):
         version = json.loads((ROOT/'asset-manifest.json').read_text())['version']
         self.assertIn(f'version "{version}"', manifest)
 
+    def test_recordings_are_valid_licensed_pcm(self):
+        import wave
+        rows = json.loads((ROOT/'audio/sources.json').read_text())
+        self.assertEqual({Path(row['path']).stem for row in rows}, {'cue', 'ball', 'pocket'})
+        for row in rows:
+            path = ROOT/row['path']
+            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), row['sha256'])
+            self.assertEqual(row['license'], 'CC0-1.0')
+            self.assertTrue(row['source'].startswith('https://freesound.org/people/'))
+            with wave.open(str(path)) as clip:
+                self.assertEqual((clip.getnchannels(), clip.getsampwidth(), clip.getframerate()), (1, 2, 44100))
+                self.assertGreater(clip.getnframes(), 1000)
+                self.assertLess(clip.getnframes()/clip.getframerate(), 1)
+        manifest = (ROOT/'open77.lua').read_text()
+        self.assertIn('files { "audio/*.wav" }', manifest)
+        self.assertIn('"audio.play"', manifest)
+
+    def test_coyote_cleanup_is_an_archive_sidecar(self):
+        manifest = json.loads((ROOT/'asset-manifest.json').read_text())
+        row = next(row for row in manifest['cleanup'] if row['source'] == '###night_city_billiards_el_coyote_cleanup.xl')
+        self.assertEqual(row['package'], 'archive/pc/mod/0_opx_pool_hosts.archive.xl')
+        with zipfile.ZipFile(ROOT/'dist/opx_pool_assets.zip') as bundle:
+            self.assertIn(row['package'][:-3], bundle.namelist())
+            self.assertNotIn('archive/pc/mod/###opx_pool_el_coyote_cleanup.xl', bundle.namelist())
+            self.assertEqual(bundle.read(row['package']), (ROOT/row['path']).read_bytes())
+
     def test_crc_known_vector(self):
         self.assertEqual(build.crc64(b'123456789'), 0x995dc9bbdf1939fa)
 

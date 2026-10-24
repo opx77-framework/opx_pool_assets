@@ -1,5 +1,5 @@
 <h1 align="center">OPX//77 · opx_pool_assets</h1>
-<p align="center"><strong>Open77 preload assets for the original OPX billiards practice module.</strong></p>
+<p align="center"><strong>Open77 preload assets for the original OPX three-ball modes.</strong></p>
 <p align="center">
   <a href="https://github.com/opx77-framework/opx_pool_assets/actions/workflows/check.yml">Checks</a> ·
   <a href="https://github.com/opx77-framework/opx_infinity">Framework</a> ·
@@ -14,7 +14,8 @@ A separate **Open77 asset resource**, not another gameplay implementation:
 
 - Six cooked hosts: ordinary/attached variants of a cue ball, a yellow object
   ball and a horizontal cue. Motion blur settings from the supplied hosts remain.
-- Ten supplied ArchiveXL table-cleanup patches.
+- Ten supplied ArchiveXL table-cleanup patches, including a Coyote archive sidecar.
+- Three short CC0 recordings and a bounded spatial audio service.
 - A deterministic builder and checked preload ZIP under `dist/`.
 - Original source credits and provenance in [NOTICE.md](NOTICE.md).
 
@@ -32,10 +33,20 @@ on the same server. The legacy pack replaced 25 aliases; this package excludes
 its food, medical and military replacements. It does **not** add native pool aliases
 or claim to remove the platform's catalogue limitation.
 
-The resource includes an idle client entry point so that it is delivered in the
+The resource includes a client entry point so that it is delivered in the
 signed Lua resource set and can satisfy Infinity's dependency during activation.
 The entry point does not mount archives or run gameplay. The manifest targets the
 client runtime version `0.0.1`, independently of the Cyberpunk game build.
+
+## Recorded audio
+
+Version 0.2.0 adds three short recordings of real billiard contacts (cue, ball,
+pocket), packaged as mono PCM WAV. Rail taps reuse the ball clip at lower gain.
+See [credits and CC0 provenance](NOTICE.md) and `audio/sources.json`. The audio
+files travel in the signed Lua resource set, separately from the unchanged
+cooked archive; the resource owns eight bounded spatial audio voices. Only
+Infinity can invoke its closed `pool_audio` and `pool_audio_clear` client exports.
+No audio URL is fetched at gameplay time.
 
 ## Installation
 
@@ -76,7 +87,7 @@ assets/cleanup/archive/pc/mod/           supplied world-cleanup patches
 asset-manifest.json                     source hashes, buffer sizes and mappings
 tools/build.py                          Python 3.10+ standard-library builder
 dist/opx_pool_assets.zip                 game-root relative preload
-open77.lua                              resource and loader dependency
+open77.lua                              resource, audio files and permissions
 ```
 
 Run `python3 tools/build.py`, then `python3 -m unittest discover -s tests -v`.
@@ -90,6 +101,11 @@ indexes, CRC64, source segments and ZIP membership.
 Server package publication and automated tests do not prove rendered shape,
 pivot, size or table alignment. Check the white/yellow balls, horizontal cue,
 movement, pockets and a second spectator after a **fresh launcher boot**.
+The active Coyote patch is packaged as `0_opx_pool_hosts.archive.xl`, beside its
+matching archive. ArchiveXL discovers that sidecar even when the depot mounts
+archives individually without a directory base path; arbitrary standalone `.xl`
+files are not discovered through that route. Other supplied patches remain
+unchanged. The Coyote patch content and node-count/type guards are preserved.
 ArchiveXL cleanup is tied to the recorded sector/node counts; a mismatched game
 sector leaves its original decorations in place. Check ArchiveXL's client log.
 

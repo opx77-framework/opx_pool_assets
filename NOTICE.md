@@ -20,3 +20,16 @@ scripts are excluded. Vanilla meshes remain in the player's Cyberpunk 2077 insta
 and belong to CD PROJEKT RED. This is an unofficial fan project with no CDPR
 endorsement. Preserve the source authors' notices and conditions when distributing
 third-party files; OPX does not relicense them.
+
+## Recorded pool audio
+
+The three PCM WAV clips in `audio/` are derived from real billiard recordings
+released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/):
+
+- [billiard ball clack by Za-Games](https://freesound.org/people/Za-Games/sounds/539854/).
+- [Pool_Table_Ball_Hit_Sink.WAV by AmberdeMeillon](https://freesound.org/people/AmberdeMeillon/sounds/443066/), cue excerpt.
+- [Pool_Table_Ball_Hit.WAV by AmberdeMeillon](https://freesound.org/people/AmberdeMeillon/sounds/443067/), pocket excerpt.
+
+The public HQ previews were trimmed, converted to mono PCM16/44.1 kHz, faded
+and level adjusted. Exact source/output hashes and cuts are in `audio/sources.json`.
+These recordings retain their CC0 dedication. They are not synthesized effects.

@@ -1,5 +1,5 @@
 {
-  "version": "0.1.2",
+  "version": "0.2.0",
   "upstream": "nc_pool 1.0.21 supplied by operator",
   "sourceArchiveSha256": "a580a2a9447816d8496d7dd03eb9403628290bc38c636fcc6a55d1f9860cfbed",
   "hosts": [
@@ -175,9 +175,10 @@
     },
     {
       "path": "assets/cleanup/archive/pc/mod/###opx_pool_el_coyote_cleanup.xl",
-      "package": "archive/pc/mod/###opx_pool_el_coyote_cleanup.xl",
+      "package": "archive/pc/mod/0_opx_pool_hosts.archive.xl",
       "sha256": "1475b0de30862123bf02d8f551e158a7ef572f047e72258971d9f5f8a41add25",
-      "source": "###night_city_billiards_el_coyote_cleanup.xl"
+      "source": "###night_city_billiards_el_coyote_cleanup.xl",
+      "discovery": "Matching archive sidecar; works with individually mounted archive groups and directory scanning."
     },
     {
       "path": "assets/cleanup/archive/pc/mod/###opx_pool_glen_apartment_cleanup.xl",
