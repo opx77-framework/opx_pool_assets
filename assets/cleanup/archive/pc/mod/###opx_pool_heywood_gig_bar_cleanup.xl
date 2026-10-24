@@ -1,0 +1,79 @@
+streaming:
+  sectors:
+  - path: base\worlds\03_night_city\_compiled\default\interior_-29_-7_0_0.streamingsector
+    expectedNodes: 771
+    nodeDeletions:
+    - index: 121
+      type: worldInstancedDestructibleMeshNode
+    - index: 122
+      type: worldInstancedDestructibleMeshNode
+    - index: 123
+      type: worldInstancedDestructibleMeshNode
+    - index: 124
+      type: worldInstancedDestructibleMeshNode
+    - index: 125
+      type: worldInstancedDestructibleMeshNode
+    - index: 126
+      type: worldInstancedDestructibleMeshNode
+    - index: 127
+      type: worldInstancedDestructibleMeshNode
+    - index: 128
+      type: worldInstancedDestructibleMeshNode
+    - index: 129
+      type: worldInstancedDestructibleMeshNode
+    - index: 130
+      type: worldInstancedDestructibleMeshNode
+    - index: 131
+      type: worldInstancedDestructibleMeshNode
+    - index: 168
+      type: worldInstancedDestructibleMeshNode
+    - index: 372
+      type: worldInstancedDestructibleMeshNode
+    - index: 395
+      type: worldInstancedDestructibleMeshNode
+    - index: 120
+      type: worldInstancedDestructibleMeshNode
+    - index: 132
+      type: worldInstancedDestructibleMeshNode
+    - index: 133
+      type: worldInstancedDestructibleMeshNode
+
+  - path: base\worlds\03_night_city\_compiled\default\interior_-30_-7_0_0.streamingsector
+    expectedNodes: 316
+    nodeDeletions:
+    - index: 45
+      type: worldInstancedDestructibleMeshNode
+    - index: 46
+      type: worldInstancedDestructibleMeshNode
+    - index: 47
+      type: worldInstancedDestructibleMeshNode
+    - index: 48
+      type: worldInstancedDestructibleMeshNode
+    - index: 49
+      type: worldInstancedDestructibleMeshNode
+    - index: 50
+      type: worldInstancedDestructibleMeshNode
+    - index: 51
+      type: worldInstancedDestructibleMeshNode
+    - index: 52
+      type: worldInstancedDestructibleMeshNode
+    - index: 53
+      type: worldInstancedDestructibleMeshNode
+    - index: 54
+      type: worldInstancedDestructibleMeshNode
+    - index: 55
+      type: worldInstancedDestructibleMeshNode
+    - index: 56
+      type: worldInstancedDestructibleMeshNode
+    - index: 57
+      type: worldInstancedDestructibleMeshNode
+    - index: 119
+      type: worldInstancedDestructibleMeshNode
+
+  - path: base\worlds\03_night_city\_compiled\default\exterior_-15_-4_0_0.streamingsector
+    expectedNodes: 2199
+    nodeDeletions:
+    - index: 722
+      type: worldInstancedDestructibleMeshNode
+    - index: 732
+      type: worldInstancedDestructibleMeshNode

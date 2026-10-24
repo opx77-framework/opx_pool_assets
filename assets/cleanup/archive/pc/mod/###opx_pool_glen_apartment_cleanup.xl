@@ -1,0 +1,14 @@
+streaming:
+  sectors:
+    - path: base\worlds\03_night_city\_compiled\default\quest_ca115e9713d725d7.streamingsector
+      expectedNodes: 19
+      nodeDeletions:
+        - index: 4
+          type: worldEntityNode
+          debugName: dlc6_apart_hey_gle_ball
+        - index: 5
+          type: worldEntityNode
+          debugName: "{dlc6_apart_hey_gle_cueball}"
+        - index: 6
+          type: worldEntityNode
+          debugName: dlc6_apart_hey_gle_stick

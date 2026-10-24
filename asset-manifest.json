@@ -1,0 +1,224 @@
+{
+  "version": "0.1.0",
+  "upstream": "nc_pool 1.0.21 supplied by operator",
+  "sourceArchiveSha256": "a580a2a9447816d8496d7dd03eb9403628290bc38c636fcc6a55d1f9860cfbed",
+  "hosts": [
+    {
+      "depot": "cyberm\\entities\\props\\open77_prop_recreation_tent.ent",
+      "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case.ent",
+      "path": "assets/hosts/cyberm/entities/props/open77_prop_recreation_tent.ent",
+      "sha256": "c6c8922628b03af65973bc97e0116066fb23ee54eed9fd610714b22ffba1d5ea",
+      "flags": 2,
+      "segments": [
+        {
+          "disk": 5691,
+          "memory": 5691
+        },
+        {
+          "disk": 827,
+          "memory": 1210
+        },
+        {
+          "disk": 2458,
+          "memory": 5164
+        },
+        {
+          "disk": 5341,
+          "memory": 20280
+        }
+      ]
+    },
+    {
+      "depot": "cyberm\\entities\\props\\open77_prop_recreation_tent_attached.ent",
+      "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_attached.ent",
+      "path": "assets/hosts/cyberm/entities/props/open77_prop_recreation_tent_attached.ent",
+      "sha256": "c6c8922628b03af65973bc97e0116066fb23ee54eed9fd610714b22ffba1d5ea",
+      "flags": 2,
+      "segments": [
+        {
+          "disk": 5691,
+          "memory": 5691
+        },
+        {
+          "disk": 827,
+          "memory": 1210
+        },
+        {
+          "disk": 2458,
+          "memory": 5164
+        },
+        {
+          "disk": 5341,
+          "memory": 20280
+        }
+      ]
+    },
+    {
+      "depot": "cyberm\\entities\\props\\open77_prop_recreation_sleeping_bag.ent",
+      "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
+      "path": "assets/hosts/cyberm/entities/props/open77_prop_recreation_sleeping_bag.ent",
+      "sha256": "2e11fbd11b0e4c451174fa3da5048dd5156f9d89ecacbe2e322031a15255bf23",
+      "flags": 2,
+      "segments": [
+        {
+          "disk": 5691,
+          "memory": 5691
+        },
+        {
+          "disk": 827,
+          "memory": 1210
+        },
+        {
+          "disk": 2458,
+          "memory": 5164
+        },
+        {
+          "disk": 5341,
+          "memory": 20280
+        }
+      ]
+    },
+    {
+      "depot": "cyberm\\entities\\props\\open77_prop_recreation_sleeping_bag_attached.ent",
+      "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large_attached.ent",
+      "path": "assets/hosts/cyberm/entities/props/open77_prop_recreation_sleeping_bag_attached.ent",
+      "sha256": "2e11fbd11b0e4c451174fa3da5048dd5156f9d89ecacbe2e322031a15255bf23",
+      "flags": 2,
+      "segments": [
+        {
+          "disk": 5691,
+          "memory": 5691
+        },
+        {
+          "disk": 827,
+          "memory": 1210
+        },
+        {
+          "disk": 2458,
+          "memory": 5164
+        },
+        {
+          "disk": 5341,
+          "memory": 20280
+        }
+      ]
+    },
+    {
+      "depot": "cyberm\\entities\\props\\open77_prop_recreation_gym_equipment.ent",
+      "sourceDepot": "cyberm\\entities\\props\\open77_prop_market_kiosk.ent",
+      "path": "assets/hosts/cyberm/entities/props/open77_prop_recreation_gym_equipment.ent",
+      "sha256": "87be39db2190e700e550496fd699d0b992e69fc7fae9819994bc28507849f191",
+      "flags": 2,
+      "segments": [
+        {
+          "disk": 5691,
+          "memory": 5691
+        },
+        {
+          "disk": 1042,
+          "memory": 1541
+        },
+        {
+          "disk": 2458,
+          "memory": 5164
+        },
+        {
+          "disk": 5341,
+          "memory": 20280
+        }
+      ]
+    },
+    {
+      "depot": "cyberm\\entities\\props\\open77_prop_recreation_gym_equipment_attached.ent",
+      "sourceDepot": "cyberm\\entities\\props\\open77_prop_market_kiosk_attached.ent",
+      "path": "assets/hosts/cyberm/entities/props/open77_prop_recreation_gym_equipment_attached.ent",
+      "sha256": "87be39db2190e700e550496fd699d0b992e69fc7fae9819994bc28507849f191",
+      "flags": 2,
+      "segments": [
+        {
+          "disk": 5691,
+          "memory": 5691
+        },
+        {
+          "disk": 1042,
+          "memory": 1541
+        },
+        {
+          "disk": 2458,
+          "memory": 5164
+        },
+        {
+          "disk": 5341,
+          "memory": 20280
+        }
+      ]
+    }
+  ],
+  "cleanup": [
+    {
+      "path": "assets/cleanup/archive/pc/mod/###opx_pool_afterlife_table_cleanup.xl",
+      "package": "archive/pc/mod/###opx_pool_afterlife_table_cleanup.xl",
+      "sha256": "d9d92532bd203e70159886f786b4e0c6df25aace171b0f25645c22f4386d8861",
+      "source": "###nc_pool_afterlife_table_cleanup.xl"
+    },
+    {
+      "path": "assets/cleanup/archive/pc/mod/###opx_pool_coyote_hq_table_cleanup.xl",
+      "package": "archive/pc/mod/###opx_pool_coyote_hq_table_cleanup.xl",
+      "sha256": "1fe0d29c6bda27245c50a580eb423d43b5300299e7b1ef55057475bf2f38f380",
+      "source": "###nc_pool_coyote_hq_table_cleanup.xl"
+    },
+    {
+      "path": "assets/cleanup/archive/pc/mod/###opx_pool_sixthstreet_hq_table_cleanup.xl",
+      "package": "archive/pc/mod/###opx_pool_sixthstreet_hq_table_cleanup.xl",
+      "sha256": "95a8992d3db6d01383406c132f7c0c9985f8a576a3f204ae575db604785fd85c",
+      "source": "###nc_pool_sixthstreet_hq_table_cleanup.xl"
+    },
+    {
+      "path": "assets/cleanup/archive/pc/mod/###opx_pool_el_coyote_cleanup.xl",
+      "package": "archive/pc/mod/###opx_pool_el_coyote_cleanup.xl",
+      "sha256": "1475b0de30862123bf02d8f551e158a7ef572f047e72258971d9f5f8a41add25",
+      "source": "###night_city_billiards_el_coyote_cleanup.xl"
+    },
+    {
+      "path": "assets/cleanup/archive/pc/mod/###opx_pool_glen_apartment_cleanup.xl",
+      "package": "archive/pc/mod/###opx_pool_glen_apartment_cleanup.xl",
+      "sha256": "ff3945ad742663deb7cea73fb2d8d6b86d2454ea4c93e4fd91ac58f1bc2bc7f1",
+      "source": "###night_city_billiards_glen_apartment_cleanup.xl"
+    },
+    {
+      "path": "assets/cleanup/archive/pc/mod/###opx_pool_glen_gang_cleanup.xl",
+      "package": "archive/pc/mod/###opx_pool_glen_gang_cleanup.xl",
+      "sha256": "82c2741ed9bbcc0f4bae0f67c87040cd688dfbec55757fb75b73b955110749d6",
+      "source": "###night_city_billiards_glen_gang_cleanup.xl"
+    },
+    {
+      "path": "assets/cleanup/archive/pc/mod/###opx_pool_heywood_gig_bar_cleanup.xl",
+      "package": "archive/pc/mod/###opx_pool_heywood_gig_bar_cleanup.xl",
+      "sha256": "cd934eef755ce07f1700979be23034742cf006ef4db1a9e3785bbd3306f3ce31",
+      "source": "###night_city_billiards_heywood_gig_bar_cleanup.xl"
+    },
+    {
+      "path": "assets/cleanup/archive/pc/mod/###opx_pool_hooh_cleanup.xl",
+      "package": "archive/pc/mod/###opx_pool_hooh_cleanup.xl",
+      "sha256": "b3702ddb5ce3131bdb2f9ebd0bf2675c2a8f15e0042b16ec105c15f8b3acc127",
+      "source": "###night_city_billiards_hooh_cleanup.xl"
+    },
+    {
+      "path": "assets/cleanup/archive/pc/mod/###opx_pool_luxury_apartment_cleanup.xl",
+      "package": "archive/pc/mod/###opx_pool_luxury_apartment_cleanup.xl",
+      "sha256": "6bd69f06b745b47d24008bb19da2e0d3fd78e60fdb8c1946da3ab308f07dcc1e",
+      "source": "###night_city_billiards_luxury_apartment_cleanup.xl"
+    },
+    {
+      "path": "assets/cleanup/archive/pc/mod/###opx_pool_north_oak_cleanup.xl",
+      "package": "archive/pc/mod/###opx_pool_north_oak_cleanup.xl",
+      "sha256": "b391eb47cd079476a3f05c57c5c89bfc8f6699f7c57f5fd7a2af800f7376e893",
+      "source": "###night_city_billiards_north_oak_cleanup.xl"
+    }
+  ],
+  "models": {
+    "cue": "recreation.tent",
+    "object": "recreation.sleeping_bag",
+    "stick": "recreation.gym_equipment"
+  }
+}

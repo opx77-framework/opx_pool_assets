@@ -1,0 +1,14 @@
+streaming:
+  sectors:
+    - path: santo_serenity_resid10\sectors\heycaitynative.streamingsector
+      expectedNodes: 222
+      nodeDeletions:
+        - index: 181
+          type: worldEntityNode
+          debugName: "[Entity Template] stick_ASSIGN_NODEREF"
+        - index: 182
+          type: worldEntityNode
+          debugName: "[Entity Template] Whiteball_ASSIGN_NODEREF"
+        - index: 183
+          type: worldEntityNode
+          debugName: "[Entity Template] 8ball_ASSIGN_NODEREF"

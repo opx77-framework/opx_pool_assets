@@ -1,0 +1,23 @@
+streaming:
+  sectors:
+    - path: coyotes_bar_apartment_friends_1.1\sectors\coyotes_bar_apartment_friends.streamingsector
+      expectedNodes: 1818
+      nodeDeletions:
+        - index: 1786
+          type: worldEntityNode
+          debugName: "[Entity Template] stick_ASSIGN_NODEREF"
+        - index: 1787
+          type: worldEntityNode
+          debugName: "[Entity Template] cueball_ASSIGN_NODEREF"
+        - index: 1788
+          type: worldEntityNode
+          debugName: "[Entity Template] ball_ASSIGN_NODEREF"
+        - index: 1792
+          type: worldMeshNode
+          debugName: "[Static Mesh] ball_c_billiard"
+        - index: 1793
+          type: worldCollisionNode
+          debugName: "[Collision Shape] billiard_stick_a_collider"
+        - index: 1794
+          type: worldMeshNode
+          debugName: "[Static Mesh] billiard_stick_a"

@@ -1,0 +1,31 @@
+streaming:
+  sectors:
+  - path: north_oak_casino\sectors\casino.streamingsector
+    expectedNodes: 1971
+    nodeDeletions:
+    - index: 245
+      type: worldEntityNode
+    - index: 246
+      type: worldEntityNode
+    - index: 247
+      type: worldEntityNode
+    - index: 248
+      type: worldEntityNode
+    - index: 251
+      type: worldEntityNode
+    - index: 791
+      type: worldEntityNode
+    - index: 833
+      type: worldEntityNode
+    - index: 819
+      type: worldEntityNode
+    - index: 838
+      type: worldEntityNode
+    - index: 226
+      type: worldEntityNode
+    - index: 23
+      type: worldEntityNode
+    - index: 44
+      type: worldEntityNode
+    - index: 403
+      type: worldEntityNode
