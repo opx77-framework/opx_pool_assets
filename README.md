@@ -36,9 +36,15 @@ or claim to remove the platform's catalogue limitation.
 
 1. Install this repository as `resources/opx_pool_assets` alongside `opx_infinity`.
    The committed ZIP is ready; Python is needed only to rebuild it.
-2. Require the official **indexed** ArchiveXL package through your server's
-   `requiredMods.packages`, with `id: "archivexl"` and `minVersion: "1.27.1"`.
-   It is distributed and verified by the Open77 signed index.
+2. Table-decoration cleanup needs the [Open77 ArchiveXL port for Cyberpunk 2.5](https://github.com/Open2077/archive-xl), published as `1.27.5-open77.6`.
+   Do not substitute the older 2.31 build. The stable platform catalogue checked
+   on 2026-10-24 (generation 82) has **no standalone `archivexl` entry**: requesting
+   that indexed ID makes the launcher refuse the world. The example leaves
+   `packages` empty deliberately. To distribute this loader as a hosted executable,
+   inspect it in Warden and confirm that its exact hash has a verified platform
+   verdict before requiring it on a secured world. A release on GitHub alone
+   does not provide that verdict. Until then, decoration cleanup is unavailable;
+   delivery of this repository's inert archive does not prove cleanup works.
 3. Add `opx_pool_assets` before `opx_infinity` in `resources.load`, preserving your
    other resources. **Do not load the `archivexl` resource on a secured server**:
    its automatic preload contains a DLL and is deliberately refused by Open77.
@@ -54,7 +60,7 @@ or claim to remove the platform's catalogue limitation.
    must match the table above. The ten table presets are in the framework.
 
 The launcher downloads `opx_pool_assets-assets` from your Open77 resource HTTP
-endpoint and resolves ArchiveXL through the platform signed index. No Fivemanage key or manual player file copy is involved: these are
+endpoint. This does not install or validate ArchiveXL. No Fivemanage key is involved: these are
 cooked 3D assets mounted at game boot.
 
 ## Layout and rebuilding
