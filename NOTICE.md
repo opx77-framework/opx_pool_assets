@@ -15,6 +15,13 @@ https://www.nexusmods.com/cyberpunk2077/mods/33361
 Additional supplied Afterlife, Coyote HQ and 6th Street patches credit Darkpickle.
 Original provenance and SHA-256 values are recorded in `asset-manifest.json`.
 
+The fifteen additional `opx/pool/ball_*.ent` visual hosts derive from the same
+supplied object-ball host. Their compiled-data buffer changes only the vanilla
+mesh reference; unchanged cooked buffers and original authorship are preserved.
+The decoded source buffer, hashes and deterministic derivation are recorded in
+`asset-manifest.json` and `tools/ball_hosts.py`. No additional vanilla meshes or
+textures are redistributed.
+
 The unused `night_city_billiards_balls.archive` and all nc_pool gameplay Lua/WebUI
 scripts are excluded. Vanilla meshes remain in the player's Cyberpunk 2077 install
 and belong to CD PROJEKT RED. This is an unofficial fan project with no CDPR

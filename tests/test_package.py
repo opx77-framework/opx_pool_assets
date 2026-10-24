@@ -76,11 +76,11 @@ class PackageTests(unittest.TestCase):
         _,_,unpacked,packed,count = struct.unpack_from('<5I',data,172)
         self.assertEqual(unpacked,packed)
         names=data[192:192+packed].rstrip(b'\0').decode('ascii').split('\0')
-        self.assertEqual(count,6)
+        self.assertEqual(count,21)
         rows={build.fnv(row['depot']):row for row in manifest['hosts']}
         self.assertEqual(set(names),{row['depot'] for row in rows.values()})
         entries,segments,deps=struct.unpack_from('<III',data,index+16)
-        self.assertEqual((entries,segments,deps),(6,24,0))
+        self.assertEqual((entries,segments,deps),(21,84,0))
         segment_start=index+28+entries*56
         for number in range(entries):
             h,_,flags,start,end,_,_=struct.unpack_from('<QQIIIII',data,index+28+number*56)
@@ -94,6 +94,38 @@ class PackageTests(unittest.TestCase):
             self.assertEqual(b''.join(parts),source)
             self.assertEqual(hashlib.sha256(source).hexdigest(),row['sha256'])
             self.assertEqual(flags,row['flags'])
+
+    def test_fifteen_hosts_bind_distinct_meshes_and_have_valid_cr2w_checksums(self):
+        import zlib
+        spec = importlib.util.spec_from_file_location('ball_hosts', ROOT/'tools/ball_hosts.py')
+        module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
+        manifest = json.loads((ROOT/'asset-manifest.json').read_text())
+        source = (ROOT/module.SOURCE).read_bytes()
+        components = (ROOT/module.COMPONENTS).read_bytes()
+        rows = [row for row in manifest['hosts'] if row['depot'].startswith('opx\\pool\\')]
+        self.assertEqual(len(rows),15)
+        self.assertEqual(len({row['mesh'] for row in rows}),15)
+        for number,row in enumerate(rows,1):
+            letter = chr(98+number)
+            content,segments = module.derive(source,components,letter)
+            self.assertEqual(content,(ROOT/row['path']).read_bytes())
+            self.assertEqual(segments,row['segments'])
+            self.assertEqual(row['depot'],'opx\\pool\\ball_%02d.ent' % number)
+            self.assertEqual(struct.unpack_from('<I',content,28)[0],len(content))
+            header = bytearray(content[:160]); crc = struct.unpack_from('<I',header,32)[0]
+            struct.pack_into('<I',header,32,0xdeadbeef)
+            self.assertEqual(zlib.crc32(header),crc)
+            table,count,crc = struct.unpack_from('<III',content,40+5*12)
+            self.assertEqual(zlib.crc32(content[table:table+count*24]),crc)
+            for index in range(count):
+                _,_,offset,disk,memory,crc = struct.unpack_from('<6I',content,table+index*24)
+                self.assertEqual(zlib.crc32(content[offset:offset+disk]),crc)
+                if index == 0:
+                    self.assertEqual(disk,memory)
+                    self.assertEqual(content[offset:offset+disk],components.replace(module.MESH.format('m').encode(),row['mesh'].encode()))
+                else:
+                    original_offset,original_disk = struct.unpack_from('<II',source,table+index*24+8)
+                    self.assertEqual(content[offset:offset+disk],source[original_offset:original_offset+original_disk])
 
     def test_preload_is_inert_complete_and_has_no_legacy_overrides(self):
         manifest=json.loads((ROOT/'asset-manifest.json').read_text())

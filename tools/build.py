@@ -43,8 +43,9 @@ def archive(manifest):
     hosts = sorted(manifest['hosts'], key=lambda row: fnv(row['depot']))
     allowed = {'cyberm\\entities\\props\\open77_prop_' + alias.replace('.', '_') + suffix + '.ent'
                for alias in RESERVED for suffix in ('', '_attached')}
-    if {row['depot'] for row in hosts} != allowed or len(hosts) != 6:
-        raise ValueError('only the six reserved recreation hosts may be packaged')
+    allowed |= {'opx\\pool\\ball_%02d.ent' % i for i in range(1,16)}
+    if {row['depot'] for row in hosts} != allowed or len(hosts) != 21:
+        raise ValueError('only six legacy recreation hosts and fifteen namespaced ball hosts may be packaged')
     names = b''.join(row['depot'].encode('ascii') + b'\0' for row in hosts)
     footer = struct.pack('<5I', 0x4c585253, 1, len(names), len(names), len(hosts)) + names
     data = bytearray(bytes(172) + footer)
