@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "upstream": "nc_pool 1.0.21 supplied by operator",
   "sourceArchiveSha256": "a580a2a9447816d8496d7dd03eb9403628290bc38c636fcc6a55d1f9860cfbed",
   "hosts": [
@@ -154,8 +154,8 @@
       ]
     },
     {
-      "depot": "opx\\pool\\ball_01.ent",
-      "path": "assets/hosts/opx/pool/ball_01.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_01.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_01.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "5a40c8442f8ed31d70de5ffcd775437b699bd43e05b1f7f2005f34a17cfc2ef4",
       "flags": 2,
@@ -180,8 +180,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_c_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_02.ent",
-      "path": "assets/hosts/opx/pool/ball_02.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_02.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_02.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "adfa58a1566cb83ae88b54daca08897dca4266e90b3e6dd0852d3dcee108c3f1",
       "flags": 2,
@@ -206,8 +206,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_d_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_03.ent",
-      "path": "assets/hosts/opx/pool/ball_03.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_03.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_03.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "833d32865abbf4b66ff7f587dea3a5d963250b95e6e6b22f1413d8fec2ab68a1",
       "flags": 2,
@@ -232,8 +232,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_e_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_04.ent",
-      "path": "assets/hosts/opx/pool/ball_04.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_04.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_04.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "a1465364c2603715f395c2f4008c6a75a0d6a6dbef8b06c6a1a50b52f52aae53",
       "flags": 2,
@@ -258,8 +258,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_f_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_05.ent",
-      "path": "assets/hosts/opx/pool/ball_05.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_05.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_05.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "18967ef51c88e0075ae4bebbbe43092e680f6941a0d92c02d7af08bda1a62508",
       "flags": 2,
@@ -284,8 +284,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_g_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_06.ent",
-      "path": "assets/hosts/opx/pool/ball_06.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_06.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_06.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "62b61d9430f336954f977504fe97dd5764ae6c1b9ac4a4f5a7073dc8e09a6ad2",
       "flags": 2,
@@ -310,8 +310,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_h_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_07.ent",
-      "path": "assets/hosts/opx/pool/ball_07.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_07.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_07.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "423dd6d5d1f25a981affa200b75f2aa00bb28cf6e76fa47424e6962fa1a758dc",
       "flags": 2,
@@ -336,8 +336,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_i_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_08.ent",
-      "path": "assets/hosts/opx/pool/ball_08.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_08.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_08.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "92f76a759be460f3f2103e8140f839e3ab9b056356da76735f7afb361c75bc7b",
       "flags": 2,
@@ -362,8 +362,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_j_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_09.ent",
-      "path": "assets/hosts/opx/pool/ball_09.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_09.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_09.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "774e59b73c8902b4b2b6cd7d546ff4ba99a6773cc98dee094f232dc0f2615823",
       "flags": 2,
@@ -388,8 +388,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_k_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_10.ent",
-      "path": "assets/hosts/opx/pool/ball_10.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_10.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_10.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "6606139f82eeb26ff91b63286d2954f3badf680ac1b7a7af1c4dd075823bacf4",
       "flags": 2,
@@ -414,8 +414,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_l_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_11.ent",
-      "path": "assets/hosts/opx/pool/ball_11.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_11.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_11.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "9e1d534241183df47050b33b207d86f4864a1d41aea19702edffa5936f5bca83",
       "flags": 2,
@@ -440,8 +440,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_m_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_12.ent",
-      "path": "assets/hosts/opx/pool/ball_12.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_12.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_12.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "f1b6e316cd2f242f66c7d0cf87910dff305502b5fe5b863c1606ea9cca5aafac",
       "flags": 2,
@@ -466,8 +466,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_n_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_13.ent",
-      "path": "assets/hosts/opx/pool/ball_13.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_13.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_13.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "9b589621541d100cdb0a398e5313ce0271d8eeaa6f39b0a30cbe29827b761f4c",
       "flags": 2,
@@ -492,8 +492,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_o_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_14.ent",
-      "path": "assets/hosts/opx/pool/ball_14.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_14.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_14.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "26ce65b3a90743920f389aeee7362f1eaefcb2ac520000cb85d6b99f0c654955",
       "flags": 2,
@@ -518,8 +518,8 @@
       "mesh": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_p_billiard.mesh"
     },
     {
-      "depot": "opx\\pool\\ball_15.ent",
-      "path": "assets/hosts/opx/pool/ball_15.ent",
+      "depot": "open77\\assets\\opx_infinity\\pool\\ball_15.ent",
+      "path": "assets/hosts/open77/assets/opx_infinity/pool/ball_15.ent",
       "sourceDepot": "cyberm\\entities\\props\\open77_prop_military_case_large.ent",
       "sha256": "689a9d31be6d877da25965becf12905459b9984845015fe7dc9583c4e9b0ed5a",
       "flags": 2,
@@ -566,7 +566,7 @@
     {
       "path": "assets/cleanup/archive/pc/mod/###opx_pool_el_coyote_cleanup.xl",
       "package": "archive/pc/mod/0_opx_pool_hosts.archive.xl",
-      "sha256": "1475b0de30862123bf02d8f551e158a7ef572f047e72258971d9f5f8a41add25",
+      "sha256": "9254d504cbc61541c1674f77c9ccdedadc084758ceaa6da4f7c5d56ba5ccfca9",
       "source": "###night_city_billiards_el_coyote_cleanup.xl",
       "discovery": "Matching archive sidecar; works with individually mounted archive groups and directory scanning."
     },
@@ -619,5 +619,68 @@
     "compiledData": "assets/templates/object-components.bin",
     "compiledDataSha256": "7d86d329cfa7b68d3f53834a81e44bf5c5c0028c3e2979eeb9b01df8fa407c02",
     "notes": "Decoded first cooked buffer from the supplied host, imported mesh paths preserved; generated hosts store this buffer uncompressed."
-  }
+  },
+  "resourceMeshNamespace": "open77\\assets\\opx_infinity\\pool\\",
+  "meshLinks": [
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_c_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_01.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_d_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_02.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_e_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_03.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_f_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_04.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_g_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_05.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_h_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_06.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_i_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_07.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_j_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_08.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_k_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_09.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_l_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_10.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_m_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_11.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_n_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_12.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_o_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_13.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_p_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_14.mesh"
+    },
+    {
+      "source": "base\\environment\\decoration\\recreation\\sports\\ball\\ball_q_billiard.mesh",
+      "alias": "open77\\assets\\opx_infinity\\pool\\ball_15.mesh"
+    }
+  ]
 }

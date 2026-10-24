@@ -40,12 +40,12 @@ client runtime version `0.0.1`, independently of the Cyberpunk game build.
 
 ## Recorded audio
 
-Version 0.3.0 adds fifteen namespaced cooked visual hosts, one for each vanilla
+Version 0.3.1 adds fifteen namespaced cooked visual hosts, one for each vanilla
 object-ball mesh (`ball_c` through `ball_q`). Infinity registers them with
 `Open77.props.registerModel` on op77.152 or newer and uses the model IDs returned
 by that API. Raw mesh paths alone can display fallback cylinders and are no
 longer used by the default full rack. These hosts reserve no additional global
-aliases. Use the matching Infinity update that requires asset version 0.3.0.
+aliases. Use the matching Infinity update that requires asset version 0.3.1.
 
 After installing this update, restart the dedicated server and **fully close the
 game, then launch it again through the Open77 launcher** to mount the new archive.
@@ -128,3 +128,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md), the organization's
 [Support](https://github.com/opx77-framework/.github/blob/main/SUPPORT.md) and
 [Security](https://github.com/opx77-framework/.github/blob/main/SECURITY.md).
 Read [NOTICE.md](NOTICE.md): the tooling licence excludes third-party assets.
+
+The native registry requires both mesh and visual-host paths under
+`open77/assets/<registering resource>/`. The hosts are packaged under the Infinity
+namespace, and the archive sidecar links fifteen mesh names in that same namespace
+to their vanilla ball meshes using ArchiveXL `resource.link`. No game mesh data is
+redistributed. Keep ArchiveXL enabled and restart the game to mount version 0.3.1.

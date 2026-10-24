@@ -45,3 +45,36 @@ streaming:
       type: worldInstancedDestructibleMeshNode
     - index: 437
       type: worldInstancedDestructibleMeshNode
+
+resource:
+  link:
+    base\environment\decoration\recreation\sports\ball\ball_c_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_01.mesh
+    base\environment\decoration\recreation\sports\ball\ball_d_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_02.mesh
+    base\environment\decoration\recreation\sports\ball\ball_e_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_03.mesh
+    base\environment\decoration\recreation\sports\ball\ball_f_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_04.mesh
+    base\environment\decoration\recreation\sports\ball\ball_g_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_05.mesh
+    base\environment\decoration\recreation\sports\ball\ball_h_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_06.mesh
+    base\environment\decoration\recreation\sports\ball\ball_i_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_07.mesh
+    base\environment\decoration\recreation\sports\ball\ball_j_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_08.mesh
+    base\environment\decoration\recreation\sports\ball\ball_k_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_09.mesh
+    base\environment\decoration\recreation\sports\ball\ball_l_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_10.mesh
+    base\environment\decoration\recreation\sports\ball\ball_m_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_11.mesh
+    base\environment\decoration\recreation\sports\ball\ball_n_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_12.mesh
+    base\environment\decoration\recreation\sports\ball\ball_o_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_13.mesh
+    base\environment\decoration\recreation\sports\ball\ball_p_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_14.mesh
+    base\environment\decoration\recreation\sports\ball\ball_q_billiard.mesh:
+      - open77\assets\opx_infinity\pool\ball_15.mesh
