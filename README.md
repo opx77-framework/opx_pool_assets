@@ -36,11 +36,15 @@ or claim to remove the platform's catalogue limitation.
 
 1. Install this repository as `resources/opx_pool_assets` alongside `opx_infinity`.
    The committed ZIP is ready; Python is needed only to rebuild it.
-2. Install the official Open77 `archivexl` loader resource (minimum 1.27.1).
-3. Add `archivexl`, `opx_pool_assets` and `opx_infinity` to `resources.load` in
-   `server.jsonc`. Keep the existing resources; Infinity depends on this resource.
-4. Ensure required mods are enabled. Follow Open77's loader review/consent policy;
-   the preload itself contains only `.archive` and `.xl`, no executable plugins.
+2. Require the official **indexed** ArchiveXL package through your server's
+   `requiredMods.packages`, with `id: "archivexl"` and `minVersion: "1.27.1"`.
+   It is distributed and verified by the Open77 signed index.
+3. Add `opx_pool_assets` before `opx_infinity` in `resources.load`, preserving your
+   other resources. **Do not load the `archivexl` resource on a secured server**:
+   its automatic preload contains a DLL and is deliberately refused by Open77.
+4. Keep `requiredMods.enabled: true` and your current security policy. The
+   [configuration example](server-config.example.json) uses `unsecured: false`.
+   Merge its entries into your existing configuration; do not replace the rest.
 5. Stop loading `nc_pool` and its old preload on this world; loading both would
    reintroduce the original host conflicts.
 6. **Restart the dedicated server. Every player must fully quit Cyberpunk and
@@ -50,7 +54,7 @@ or claim to remove the platform's catalogue limitation.
    must match the table above. The ten table presets are in the framework.
 
 The launcher downloads `opx_pool_assets-assets` from your Open77 resource HTTP
-endpoint. No Fivemanage key or manual player file copy is involved: these are
+endpoint and resolves ArchiveXL through the platform signed index. No Fivemanage key or manual player file copy is involved: these are
 cooked 3D assets mounted at game boot.
 
 ## Layout and rebuilding
