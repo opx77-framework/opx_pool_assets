@@ -14,13 +14,13 @@ spec.loader.exec_module(build)
 
 
 class PackageTests(unittest.TestCase):
-    def test_secured_loader_uses_signed_index(self):
+    def test_example_does_not_require_unpublished_loader(self):
         manifest = (ROOT/'open77.lua').read_text()
         self.assertNotIn('dependency "archivexl', manifest)
         example = json.loads((ROOT/'server-config.example.json').read_text())
         self.assertIs(example['requiredMods']['unsecured'], False)
         self.assertNotIn('archivexl', example['resources']['load'])
-        self.assertEqual(example['requiredMods']['packages'], [{'id': 'archivexl', 'minVersion': '1.27.1'}])
+        self.assertEqual(example['requiredMods']['packages'], [])
 
     def test_crc_known_vector(self):
         self.assertEqual(build.crc64(b'123456789'), 0x995dc9bbdf1939fa)

@@ -4,7 +4,8 @@ version "0.1.1"
 open77_version ">=2.50.0"
 auto_start true
 reload_policy "reconnect"
--- ArchiveXL is required through server.jsonc requiredMods.packages (indexed).
+-- Decoration cleanup needs the Cyberpunk 2.5 ArchiveXL port; see README.
+-- Do not request an indexed loader ID absent from the platform catalogue.
 -- Do not preload its DLL resource on a secured world.
 preload_mod "dist/opx_pool_assets.zip"
 server_script "server/main.lua"

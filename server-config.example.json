@@ -3,6 +3,6 @@
   "requiredMods": {
     "enabled": true,
     "unsecured": false,
-    "packages": [{ "id": "archivexl", "minVersion": "1.27.1" }]
+    "packages": []
   }
 }
