@@ -1,0 +1,8 @@
+{
+  "resources": { "load": ["opx_lib", "opx_pool_assets", "opx_infinity"] },
+  "requiredMods": {
+    "enabled": true,
+    "unsecured": false,
+    "packages": [{ "id": "archivexl", "minVersion": "1.27.1" }]
+  }
+}
