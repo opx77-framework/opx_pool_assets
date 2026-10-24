@@ -22,6 +22,14 @@ class PackageTests(unittest.TestCase):
         self.assertNotIn('archivexl', example['resources']['load'])
         self.assertEqual(example['requiredMods']['packages'], [])
 
+    def test_asset_dependency_is_delivered_to_the_client(self):
+        manifest = (ROOT/'open77.lua').read_text()
+        self.assertIn('client_script "client/main.lua"', manifest)
+        self.assertIn('open77_version ">=0.0.1"', manifest)
+        self.assertTrue((ROOT/'client/main.lua').is_file())
+        version = json.loads((ROOT/'asset-manifest.json').read_text())['version']
+        self.assertIn(f'version "{version}"', manifest)
+
     def test_crc_known_vector(self):
         self.assertEqual(build.crc64(b'123456789'), 0x995dc9bbdf1939fa)
 
