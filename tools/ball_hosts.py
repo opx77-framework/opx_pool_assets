@@ -55,13 +55,13 @@ def generate():
     rows = []
     for number,letter in enumerate('cdefghijklmnopq',1):
         content,segments = derive(source,components,letter)
-        depot = 'opx\\pool\\ball_%02d.ent' % number
+        depot = 'open77\\assets\\opx_infinity\\pool\\ball_%02d.ent' % number
         path = ROOT/'assets/hosts'/depot.replace('\\','/')
         path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(content)
         rows.append({'depot':depot, 'path':str(path.relative_to(ROOT)), 'sourceDepot':recorded['sourceDepot'],
                      'sha256':hashlib.sha256(content).hexdigest(), 'flags':2, 'segments':segments,
                      'mesh':MESH.format(letter)})
-    manifest['hosts'] = [row for row in manifest['hosts'] if not row['depot'].startswith('opx\\pool\\')]+rows
+    manifest['hosts'] = [row for row in manifest['hosts'] if not row['depot'].startswith(('opx\\pool\\','open77\\assets\\opx_infinity\\pool\\'))]+rows
     (ROOT/'asset-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 
 if __name__ == '__main__':

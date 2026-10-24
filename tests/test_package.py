@@ -102,7 +102,7 @@ class PackageTests(unittest.TestCase):
         manifest = json.loads((ROOT/'asset-manifest.json').read_text())
         source = (ROOT/module.SOURCE).read_bytes()
         components = (ROOT/module.COMPONENTS).read_bytes()
-        rows = [row for row in manifest['hosts'] if row['depot'].startswith('opx\\pool\\')]
+        rows = [row for row in manifest['hosts'] if row['depot'].startswith('open77\\assets\\opx_infinity\\pool\\')]
         self.assertEqual(len(rows),15)
         self.assertEqual(len({row['mesh'] for row in rows}),15)
         for number,row in enumerate(rows,1):
@@ -110,7 +110,7 @@ class PackageTests(unittest.TestCase):
             content,segments = module.derive(source,components,letter)
             self.assertEqual(content,(ROOT/row['path']).read_bytes())
             self.assertEqual(segments,row['segments'])
-            self.assertEqual(row['depot'],'opx\\pool\\ball_%02d.ent' % number)
+            self.assertEqual(row['depot'],'open77\\assets\\opx_infinity\\pool\\ball_%02d.ent' % number)
             self.assertEqual(struct.unpack_from('<I',content,28)[0],len(content))
             header = bytearray(content[:160]); crc = struct.unpack_from('<I',header,32)[0]
             struct.pack_into('<I',header,32,0xdeadbeef)
@@ -126,6 +126,20 @@ class PackageTests(unittest.TestCase):
                 else:
                     original_offset,original_disk = struct.unpack_from('<II',source,table+index*24+8)
                     self.assertEqual(content[offset:offset+disk],source[original_offset:original_offset+original_disk])
+
+    def test_registered_models_are_resource_owned_and_link_to_all_vanilla_balls(self):
+        manifest=json.loads((ROOT/'asset-manifest.json').read_text())
+        prefix='open77\\assets\\opx_infinity\\pool\\'
+        rows=manifest['meshLinks'];self.assertEqual(len(rows),15)
+        row=next(x for x in manifest['cleanup'] if x['package']=='archive/pc/mod/0_opx_pool_hosts.archive.xl')
+        text=(ROOT/row['path']).read_text()
+        self.assertEqual(text.count('\nresource:'),1)
+        for number,link in enumerate(rows,1):
+            self.assertEqual(link['alias'],prefix+('ball_%02d.mesh' % number))
+            self.assertTrue(link['source'].endswith('ball_'+chr(98+number)+'_billiard.mesh'))
+            self.assertIn('    '+link['source']+':\n      - '+link['alias']+'\n',text)
+            host=ROOT/'assets/hosts'/Path((prefix+('ball_%02d.ent' % number)).replace('\\','/'))
+            self.assertTrue(host.is_file(),'registered visual entity is absent from the pack')
 
     def test_preload_is_inert_complete_and_has_no_legacy_overrides(self):
         manifest=json.loads((ROOT/'asset-manifest.json').read_text())

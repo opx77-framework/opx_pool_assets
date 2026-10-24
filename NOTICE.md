@@ -15,7 +15,7 @@ https://www.nexusmods.com/cyberpunk2077/mods/33361
 Additional supplied Afterlife, Coyote HQ and 6th Street patches credit Darkpickle.
 Original provenance and SHA-256 values are recorded in `asset-manifest.json`.
 
-The fifteen additional `opx/pool/ball_*.ent` visual hosts derive from the same
+The fifteen additional `open77/assets/opx_infinity/pool/ball_*.ent` visual hosts derive from the same
 supplied object-ball host. Their compiled-data buffer changes only the vanilla
 mesh reference; unchanged cooked buffers and original authorship are preserved.
 The decoded source buffer, hashes and deterministic derivation are recorded in
