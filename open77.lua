@@ -1,6 +1,6 @@
 -- Data-only billiards models and table cleanup, served by the Open77 launcher.
 resource "opx_pool_assets"
-version "0.2.0"
+version "0.3.0"
 -- Client manifests use the runtime version (0.0.1), not the game build (2.50).
 open77_version ">=0.0.1"
 auto_start true

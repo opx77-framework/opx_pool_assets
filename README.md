@@ -1,5 +1,5 @@
 <h1 align="center">OPX//77 · opx_pool_assets</h1>
-<p align="center"><strong>Open77 preload assets for the original OPX three-ball modes.</strong></p>
+<p align="center"><strong>Open77 preload assets for the OPX full-rack pool modes.</strong></p>
 <p align="center">
   <a href="https://github.com/opx77-framework/opx_pool_assets/actions/workflows/check.yml">Checks</a> ·
   <a href="https://github.com/opx77-framework/opx_infinity">Framework</a> ·
@@ -12,7 +12,7 @@
 
 A separate **Open77 asset resource**, not another gameplay implementation:
 
-- Six cooked hosts: ordinary/attached variants of a cue ball, a yellow object
+- Six legacy cooked hosts: ordinary/attached variants of a cue ball, a yellow object
   ball and a horizontal cue. Motion blur settings from the supplied hosts remain.
 - Ten supplied ArchiveXL table-cleanup patches, including a Coyote archive sidecar.
 - Three short CC0 recordings and a bounded spatial audio service.
@@ -39,6 +39,18 @@ The entry point does not mount archives or run gameplay. The manifest targets th
 client runtime version `0.0.1`, independently of the Cyberpunk game build.
 
 ## Recorded audio
+
+Version 0.3.0 adds fifteen namespaced cooked visual hosts, one for each vanilla
+object-ball mesh (`ball_c` through `ball_q`). Infinity registers them with
+`Open77.props.registerModel` on op77.152 or newer and uses the model IDs returned
+by that API. Raw mesh paths alone can display fallback cylinders and are no
+longer used by the default full rack. These hosts reserve no additional global
+aliases. Use the matching Infinity update that requires asset version 0.3.0.
+
+After installing this update, restart the dedicated server and **fully close the
+game, then launch it again through the Open77 launcher** to mount the new archive.
+A server reconnect inside an already-running game does not mount new archives.
+The current ArchiveXL cleanup and its installation requirements are unchanged.
 
 Version 0.2.0 adds three short recordings of real billiard contacts (cue, ball,
 pocket), packaged as mono PCM WAV. Rail taps reuse the ball clip at lower gain.

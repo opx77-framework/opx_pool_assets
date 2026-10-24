@@ -9,7 +9,11 @@ SHA-256 values in `asset-manifest.json`; preserve credits in `NOTICE.md`.
 
 Run `python3 -m unittest discover -s tests -v` and `python3 tools/build.py`.
 Commit the rebuilt `dist/opx_pool_assets.zip`. CI refuses a stale package.
-Only the six reserved host paths may enter the archive. Do not restore unrelated
+Only the six reserved legacy host paths and fifteen namespaced
+`opx/pool/ball_01.ent` through `ball_15.ent` may enter the archive. The latter
+use resource-owned model registration, not global alias overrides. Run
+`python3 tools/ball_hosts.py` after editing the recorded host template and
+verify the generated files match. Do not restore unrelated
 food, medical or military overrides from the source pack.
 
 Changing a preload requires a dedicated-server restart and a fresh client boot
