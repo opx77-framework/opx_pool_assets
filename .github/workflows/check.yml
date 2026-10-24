@@ -1,0 +1,22 @@
+name: check
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lua syntax
+        run: |
+          sudo apt-get update && sudo apt-get install -y lua5.4
+          luac5.4 -p server/main.lua
+      - name: Validate deterministic archive and inert preload
+        run: python3 -m unittest discover -s tests -v
+      - name: Rebuild committed package
+        run: |
+          python3 tools/build.py
+          git diff --exit-code -- dist/opx_pool_assets.zip

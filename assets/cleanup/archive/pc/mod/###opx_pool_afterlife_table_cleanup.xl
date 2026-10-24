@@ -1,0 +1,25 @@
+streaming:
+  sectors:
+    - path: base\worlds\03_night_city\_compiled\default\interior_-46_31_0_0.streamingsector
+      expectedNodes: 1777
+      nodeDeletions:
+        - index: 516
+          type: worldStaticMeshNode
+        - index: 517
+          type: worldStaticMeshNode
+        - index: 518
+          type: worldStaticMeshNode
+        - index: 519
+          type: worldStaticMeshNode
+        - index: 520
+          type: worldStaticMeshNode
+        - index: 521
+          type: worldStaticMeshNode
+        - index: 522
+          type: worldStaticMeshNode
+        - index: 523
+          type: worldStaticMeshNode
+        - index: 1151
+          type: worldInstancedMeshNode
+        - index: 1288
+          type: worldInstancedMeshNode
