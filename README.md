@@ -32,6 +32,11 @@ on the same server. The legacy pack replaced 25 aliases; this package excludes
 its food, medical and military replacements. It does **not** add native pool aliases
 or claim to remove the platform's catalogue limitation.
 
+The resource includes an idle client entry point so that it is delivered in the
+signed Lua resource set and can satisfy Infinity's dependency during activation.
+The entry point does not mount archives or run gameplay. The manifest targets the
+client runtime version `0.0.1`, independently of the Cyberpunk game build.
+
 ## Installation
 
 1. Install this repository as `resources/opx_pool_assets` alongside `opx_infinity`.
